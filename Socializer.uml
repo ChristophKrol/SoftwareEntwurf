@@ -34,7 +34,7 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_aGmrMHW1Ee6wsuoRGIT3og" name="Themenvorschlag" isUnique="false">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_SZ4aoHW2Ee6wsuoRGIT3og" name="uhrzeit"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SZ4aoHW2Ee6wsuoRGIT3og" name="uhrzeit" type="_i8GW8HzhEe6TkuQTXDnEmA"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_fwU3UHW2Ee6wsuoRGIT3og" name="teilnehmer" type="_UrAQEHWzEe6wsuoRGIT3og" association="_fwTpMHW2Ee6wsuoRGIT3og"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_fwTpMHW2Ee6wsuoRGIT3og" memberEnd="_fwU3UHW2Ee6wsuoRGIT3og _fwaW4HW2Ee6wsuoRGIT3og" navigableOwnedEnd="_fwaW4HW2Ee6wsuoRGIT3og">
@@ -46,73 +46,22 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rlvmIHW2Ee6wsuoRGIT3og" value="*"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_i8GW8HzhEe6TkuQTXDnEmA" name="Uhrzeit">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qKnMEHzhEe6TkuQTXDnEmA" name="stunde" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_uCsQ4HzhEe6TkuQTXDnEmA" name="minute" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Package" xmi:id="_161ZYHWwEe6wsuoRGIT3og" name="Dialogmodell"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_373dAHWwEe6wsuoRGIT3og" name="Verhaltensmodell">
-    <packagedElement xmi:type="uml:Actor" xmi:id="_faxQEHZQEe6p_c-k7bQQpA" name="Anwender"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_ixOOgHZQEe6p_c-k7bQQpA" name="im System registrieren"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_n5nEoHZQEe6p_c-k7bQQpA" memberEnd="_n5rWEHZQEe6p_c-k7bQQpA _n5tLQHZQEe6p_c-k7bQQpA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_n5qH8HZQEe6p_c-k7bQQpA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_n5qH8XZQEe6p_c-k7bQQpA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_n5rWEHZQEe6p_c-k7bQQpA" name="im system registrieren" type="_ixOOgHZQEe6p_c-k7bQQpA" association="_n5nEoHZQEe6p_c-k7bQQpA"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_n5tLQHZQEe6p_c-k7bQQpA" name="anwender" type="_faxQEHZQEe6p_c-k7bQQpA" association="_n5nEoHZQEe6p_c-k7bQQpA"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_jUtgoHZREe6p_c-k7bQQpA" name="Teilnehmer"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_UmRO4HZUEe6p_c-k7bQQpA" name="Teilnehmer nach Interessen suchen">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_UDUqIH24Ee6moZE5axOZ_A" name="Gesprächsanfrage"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_r8jVoHZQEe6p_c-k7bQQpA" name="im System anmelden"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_uwGbUHZQEe6p_c-k7bQQpA" memberEnd="_uwHCYnZQEe6p_c-k7bQQpA _uwHCY3ZQEe6p_c-k7bQQpA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uwHCYHZQEe6p_c-k7bQQpA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uwHCYXZQEe6p_c-k7bQQpA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_uwHCYnZQEe6p_c-k7bQQpA" name="anwender" type="_faxQEHZQEe6p_c-k7bQQpA" association="_uwGbUHZQEe6p_c-k7bQQpA"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_uwHCY3ZQEe6p_c-k7bQQpA" name="im system anmelden" type="_r8jVoHZQEe6p_c-k7bQQpA" association="_uwGbUHZQEe6p_c-k7bQQpA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_0dPkUHZQEe6p_c-k7bQQpA" name="User suchen">
-      <include xmi:type="uml:Include" xmi:id="_7mvWkHZQEe6p_c-k7bQQpA" addition="_r8jVoHZQEe6p_c-k7bQQpA"/>
-      <include xmi:type="uml:Include" xmi:id="_JL2hYHZREe6p_c-k7bQQpA" addition="_ixOOgHZQEe6p_c-k7bQQpA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_3KKdkHZQEe6p_c-k7bQQpA" name="Benutzername und Passwort überprüfen">
-      <include xmi:type="uml:Include" xmi:id="_d3F6AHZUEe6p_c-k7bQQpA" addition="_r8jVoHZQEe6p_c-k7bQQpA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_jUtgoHZREe6p_c-k7bQQpA" name="Teilnehmer">
-      <generalization xmi:type="uml:Generalization" xmi:id="_9iAT8HZREe6p_c-k7bQQpA" general="_faxQEHZQEe6p_c-k7bQQpA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_qdBnIHZREe6p_c-k7bQQpA" name="Organisator">
-      <generalization xmi:type="uml:Generalization" xmi:id="__LzjUHZREe6p_c-k7bQQpA" general="_faxQEHZQEe6p_c-k7bQQpA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_HZFGwHZSEe6p_c-k7bQQpA" name="Liste mit Interessen pflegen">
-      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_7x8ZoHZTEe6p_c-k7bQQpA" name="ändern oder löschen"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_MhubkHZSEe6p_c-k7bQQpA" memberEnd="_MhvCoHZSEe6p_c-k7bQQpA _MhvCoXZSEe6p_c-k7bQQpA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MhubkXZSEe6p_c-k7bQQpA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MhubknZSEe6p_c-k7bQQpA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_MhvCoHZSEe6p_c-k7bQQpA" name="organisator" type="_qdBnIHZREe6p_c-k7bQQpA" association="_MhubkHZSEe6p_c-k7bQQpA"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_MhvCoXZSEe6p_c-k7bQQpA" name="liste mit interessen pflegen" type="_HZFGwHZSEe6p_c-k7bQQpA" association="_MhubkHZSEe6p_c-k7bQQpA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_bS37sHZSEe6p_c-k7bQQpA" name="Interessen auswählen"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_dypJwHZSEe6p_c-k7bQQpA" memberEnd="_dypw0nZSEe6p_c-k7bQQpA _dyqX4HZSEe6p_c-k7bQQpA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dypw0HZSEe6p_c-k7bQQpA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dypw0XZSEe6p_c-k7bQQpA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_dypw0nZSEe6p_c-k7bQQpA" name="interessen auswählen" type="_bS37sHZSEe6p_c-k7bQQpA" association="_dypJwHZSEe6p_c-k7bQQpA"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_dyqX4HZSEe6p_c-k7bQQpA" name="teilnehmer" type="_jUtgoHZREe6p_c-k7bQQpA" association="_dypJwHZSEe6p_c-k7bQQpA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_H6GTsHZTEe6p_c-k7bQQpA" name="Gesprächsanfrage schicken"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_5LriAHZTEe6p_c-k7bQQpA" name="Interessen suchen">
-      <extend xmi:type="uml:Extend" xmi:id="_7x7ykHZTEe6p_c-k7bQQpA" extendedCase="_HZFGwHZSEe6p_c-k7bQQpA" extensionLocation="_7x8ZoHZTEe6p_c-k7bQQpA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_QbZJ4HZUEe6p_c-k7bQQpA" memberEnd="_QbZw8XZUEe6p_c-k7bQQpA _QbZw8nZUEe6p_c-k7bQQpA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QbZJ4XZUEe6p_c-k7bQQpA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QbZw8HZUEe6p_c-k7bQQpA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_QbZw8XZUEe6p_c-k7bQQpA" name="teilnehmer" type="_jUtgoHZREe6p_c-k7bQQpA" association="_QbZJ4HZUEe6p_c-k7bQQpA"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_QbZw8nZUEe6p_c-k7bQQpA" name="gesprächsanfrage schicken" type="_H6GTsHZTEe6p_c-k7bQQpA" association="_QbZJ4HZUEe6p_c-k7bQQpA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_UmRO4HZUEe6p_c-k7bQQpA" name="Teilnehmer mit denselben Interessen suchen">
-      <include xmi:type="uml:Include" xmi:id="_YOpDwHZUEe6p_c-k7bQQpA" addition="_H6GTsHZTEe6p_c-k7bQQpA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_mef0sHZUEe6p_c-k7bQQpA" name="Themenvorschlag und Uhrzeit verwalten">
-      <include xmi:type="uml:Include" xmi:id="_pdR6AHZUEe6p_c-k7bQQpA" addition="_H6GTsHZTEe6p_c-k7bQQpA"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mef0sHZUEe6p_c-k7bQQpA" name="Gesprächsanfrage schicken">
+      <extend xmi:type="uml:Extend" xmi:id="_UDUDEH24Ee6moZE5axOZ_A" extendedCase="_UmRO4HZUEe6p_c-k7bQQpA" extensionLocation="_UDUqIH24Ee6moZE5axOZ_A"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_vQdZkHZUEe6p_c-k7bQQpA" name="Gesprächsanfragen ansehen">
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_hdTWQHZVEe6p_c-k7bQQpA" name="annehmen oder ablehnen"/>
@@ -131,8 +80,8 @@
       <extend xmi:type="uml:Extend" xmi:id="_hdSvMHZVEe6p_c-k7bQQpA" extendedCase="_vQdZkHZUEe6p_c-k7bQQpA" extensionLocation="_hdTWQHZVEe6p_c-k7bQQpA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_BlCHsHZWEe6p_c-k7bQQpA" name="Liste mit gesendeten Anfragen pflegen">
-      <include xmi:type="uml:Include" xmi:id="_GtZIoHZWEe6p_c-k7bQQpA" addition="_H6GTsHZTEe6p_c-k7bQQpA"/>
       <include xmi:type="uml:Include" xmi:id="_dWYuwHZWEe6p_c-k7bQQpA" addition="_PMJTEHZVEe6p_c-k7bQQpA"/>
+      <include xmi:type="uml:Include" xmi:id="_l_hxAH24Ee6moZE5axOZ_A" addition="_mef0sHZUEe6p_c-k7bQQpA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_KlkUEHZWEe6p_c-k7bQQpA" name="gesendete Anfragen ansehen"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_PbgvUHZWEe6p_c-k7bQQpA" memberEnd="_PbhWYnZWEe6p_c-k7bQQpA _PbhWY3ZWEe6p_c-k7bQQpA">
@@ -144,6 +93,19 @@
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_mTNf0HZWEe6p_c-k7bQQpA" name="Status zu jeder Gesprächsanfrage anzeigen">
       <include xmi:type="uml:Include" xmi:id="_rIB5sHZWEe6p_c-k7bQQpA" addition="_KlkUEHZWEe6p_c-k7bQQpA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Y8foUHzjEe6TkuQTXDnEmA" name="neuen Gesprächsanfragen optisch hervorheben">
+      <include xmi:type="uml:Include" xmi:id="_gGCd4HzjEe6TkuQTXDnEmA" addition="_vQdZkHZUEe6p_c-k7bQQpA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nnLgwH23Ee6moZE5axOZ_A" memberEnd="_nnN9AH23Ee6moZE5axOZ_A _nnN9AX23Ee6moZE5axOZ_A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nnMu4H23Ee6moZE5axOZ_A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nnNV8H23Ee6moZE5axOZ_A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_nnN9AH23Ee6moZE5axOZ_A" name="teilnehmer nach interessen suchen" type="_UmRO4HZUEe6p_c-k7bQQpA" association="_nnLgwH23Ee6moZE5axOZ_A"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_nnN9AX23Ee6moZE5axOZ_A" name="teilnehmer" type="_jUtgoHZREe6p_c-k7bQQpA" association="_nnLgwH23Ee6moZE5axOZ_A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_3DhdgH24Ee6moZE5axOZ_A" name="Themenvorschlag und Uhrzeit verwalten">
+      <include xmi:type="uml:Include" xmi:id="_5-ojwH24Ee6moZE5axOZ_A" addition="_mef0sHZUEe6p_c-k7bQQpA"/>
     </packagedElement>
   </packagedElement>
 </uml:Model>
